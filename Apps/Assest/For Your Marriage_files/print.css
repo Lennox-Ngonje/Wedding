@@ -1,0 +1,365 @@
+/* Print Stylesheet - v0.0.1 */
+
+/* Print Only - Its with class print-only will be visible when the page is printed only.
+-------------------------------------------------------------- */
+div.print-only { display:block; }
+
+
+/* Base Print Styles
+-------------------------------------------------------------- */
+body {
+font: 12pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.3;
+}
+
+@page {
+margin: 1cm;
+margin-left:2.54cm; margin-right:2.54cm;
+}
+
+img {
+max-width: 500px;
+border:0;
+}
+
+h1 {
+clear: both;
+font-size: 24pt;
+color: #000000;
+font-weight:bold;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight:bold;
+  margin-top: 25pt;
+  }
+
+h3, h4, h5 {
+font-size: 16pt;
+font-weight:bold;
+margin-top: 25pt;
+}
+
+p { display:block; }
+
+br {display:block; height:1px; line-height:none; }
+
+strong { font-size: 12pt; }
+
+blockquote { font-size: 10pt; }
+
+p a {
+word-wrap: break-word;
+}
+
+p.clearfix { clear:both; display:block; width:100%; }
+
+a, a:link {
+color: #000000;
+text-decoration:none;
+}
+
+/* show the links in the morecontent box too */
+p a[href^="http://"]:after {
+content: " (" attr(href) ")";
+font-size: 12pt;
+}
+
+p a[href^="https://"]:after {
+content: " (" attr(href) ")";
+font-size: 12pt;
+}
+/* End of Base Styles
+-------------------------------------------------------------- */
+
+
+/* Custom Print Styles for FYM
+--------------------------------------------------------------- */
+
+/* Header */
+.logo-print-block {
+  display: block;
+  width:200px;
+  margin:0 auto 15pt auto;
+}
+
+/* Learn and Grow */
+.child-page-navigation {
+  margin-bottom:25pt;
+}
+
+
+
+.responsive-slider .slick-slide a, .responsive-slider .slick-slide a:link, .responsive-slider .slick-slide a:hover {
+  text-decoration: none;
+}
+
+/* Show Only Active Slide */
+    .slick-slide {
+        display: block !important;
+        width:100% !important;
+        margin:15pt 0 15pt 15pt !important;
+    }
+
+   .slick-active {
+      display: block !important;
+      width:100% !important;
+    }
+
+    /* Reset adaptiveHeight */
+    .slick-list {
+        height: auto !important;
+    }
+
+    /* Remove Scrollbars */
+    .slick-track {
+        width: auto !important;
+        height: auto !important;
+        transform: none !important;
+    }
+
+    .slick-track .slick-slide {
+      width: 100% !important;
+    }
+
+    .slick-dots {
+      display:none !important;
+    }
+
+    .responsive-slider .slick-slide .text-wrapper .info-text p.info-title {
+      font-size:14pt;
+      font-weight:bold;
+    }
+
+
+
+
+    a.featured-resource-link, a.featured-resource-link:link {
+      text-decoration: none;
+    }
+
+    .featured-resource-content p.featured-resource-title {
+      font-size:14pt;
+      font-weight:bold;
+    }
+
+
+    .blog-item {
+      margin-top:15pt;
+      margin-bottom:15pt;
+    }
+
+    .blog-item a, .blog-item a:link {
+      text-decoration: none;
+      display: block;
+    }
+
+    .blog-item a p.blog-title, .blog-item a:link p.blog-title {
+      font-size:14pt;
+      font-weight:bold;
+    }
+
+    /* Learn and Grow */
+    .misc-blog-item-wrapper {
+      margin-top:15pt;
+      margin-bottom:15pt;
+
+    }
+
+    .misc-blog-header a p.misc-category {
+      width:100% !important;
+      font-size:14pt;
+      font-weight:bold;
+      margin-bottom:0;
+    }
+
+    .misc-blog-item {
+      margin-top:15pt;
+      /* margin-left:15pt; */
+    }
+
+    .misc-blog-item a, .misc-blog-item a:link {
+      text-decoration: none;
+    }
+
+    .misc-blog-item a p.misc-blog-title {
+      font-size:14pt;
+      font-weight:bold;
+    }
+
+    /* Footer */
+    div#footer-primary-menu {
+      width:100%;
+      margin:15pt 0;
+    }
+
+    #subscribe-block {
+      Page-break-inside: avoid;
+    }
+
+    a.btn-strong-pink, a.btn-strong-pink:link, a.btn-strong-pink:active:hover {
+      border:none;
+    }
+
+    .footer a,
+    .footer a:link {
+      text-decoration: none;
+    }
+
+
+    .footer .other-topics.middle-topics {
+      width:100%;
+      text-align: left;
+      padding: 0;
+      margin: 15pt 0;
+    }
+
+    .footer .other-topics h5 {
+      font-size:12pt;
+    }
+
+    .footer .other-topics p {
+      font-size:10pt;
+    }
+
+    #copyright-block p {
+      font-size:10pt;
+    }
+
+    #copyright-block p a {
+      font-size:10pt;
+    }
+
+    /* Page Parent Print Styles */
+    #curated-subtopics-container .parent-header {
+      display:block;
+      width:100%;
+      padding-top:25pt;
+      padding-bottom: 15pt;
+    }
+
+    #curated-subtopics-container .parent-header a:after,
+    .child-intro-text h2 a:after  {
+      display: block;
+      font-size: 10pt;
+    }
+
+    #curated-subtopics-container h2 {
+      font-size: 20pt;
+      font-weight:bold;
+      margin-top: 25pt;
+    }
+
+    #curated-subtopics-container h2 a, #curated-subtopics-container h2 a:link {
+      text-decoration: none;
+    }
+
+    /*
+    .curated-child-grid {
+      margin-left:15pt;
+    }
+    */
+
+    .child-article-grid {
+      clear:both;
+      margin-bottom:25pt;
+    }
+
+    #curated-subtopics-container .child-article-grid a, #curated-subtopics-container .child-article-grid a:link {
+      text-decoration: none;
+    }
+
+    p.child-title {
+      font-weight:bold;
+    }
+
+    #daily-marriage-tip {
+      clear:both;
+      margin-top:20pt;
+      margin-bottom:20pt;
+    }
+
+    /* Page Blogs */
+    /*
+    .curated-realblogs-grid {
+      margin-left:15pt;
+    }
+    */
+    .realblogs-content-block {
+      margin-top:5pt;
+      margin-bottom:25pt;
+    }
+    p.realblogs-title {
+      font-weight:bold;
+    }
+
+    /* Find Support */
+    #find-support {
+      margin-bottom:35pt;
+    }
+
+    /* */
+    .featured-resource-wrapper {
+      /* margin-left:15pt; */
+      margin-bottom: 15pt;
+    }
+
+    .tag-box p a, .tag-box p a:link {
+      display:inline;
+    }
+    .tag-box p a:after {
+      content: '';
+    }
+
+    .alm-btn-wrap {
+      display:none;
+    }
+
+    /* Single */
+    #blog-post-page {
+      margin-top:15pt;
+      margin-bottom:25pt;
+    }
+
+    p.byline {
+      font-weight:bold;
+    }
+
+    p.byline a, p.byline a:link{
+      display:block;
+    }
+
+    .featured-image-block {
+      margin-bottom:15pt;
+    }
+
+    .related-topics-block p a, .related-topics-block p a:link {
+      display:inline;
+    }
+    .related-topics-block p a:after {
+      content: '';
+    }
+
+    /* Search Results */
+    #algolia-search-box {
+      margin-top:15pt;
+      margin-bottom:15pt;
+    }
+
+    .ais-hits--thumbnail {
+      display:none;
+    }
+
+    div.ais-hits--content a:after {
+      display: block;
+      font-size: 10pt;
+    }
+
+    #algolia-pagination {
+      display:none;
+    }
+
+    aside#ais-facets {
+      display:none;
+    }

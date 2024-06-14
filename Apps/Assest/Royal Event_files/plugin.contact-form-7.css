@@ -1,0 +1,83 @@
+textarea.wpcf7-form-control,
+.wpcf7-form-control[type="text"],
+.wpcf7-form-control[type="number"],
+.wpcf7-form-control[type="tel"],
+.wpcf7-form-control[type="url"],
+.wpcf7-form-control[type="email"],
+.wpcf7-form-control[type="password"],
+.wpcf7-form-control[type="search"] {
+  width: 100%;
+}
+
+.wpcf7 p + p,
+.wpcf7 table + p {
+  margin: 1em 0 0;
+}
+
+.wpcf7-wpgdprc {
+  display: inline-block;
+}
+
+.royal_rental_message_box {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	left: 50%;
+	top: 50%;
+	width: 80%;
+	padding: 2em;
+	line-height: 1.2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-box-shadow: 4px 4px 16px 0px rgba(0,0,200,0.3);
+	-moz-box-shadow: 4px 4px 16px 0px rgba(0,0,200,0.3);
+	box-shadow: 4px 4px 16px 0px rgba(0,0,200,0.3);
+}
+
+.wpcf7 form .wpcf7-response-output.royal_rental_message_box {
+	margin: 0;
+	padding: 2em;
+	text-align: center;
+}
+
+.wpcf7-not-valid {
+	border-color: #CC0000 !important;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(200, 0, 0, 0.2);
+	-ms-box-shadow: 0px 0px 8px 0px rgba(200, 0, 0, 0.2);
+	box-shadow: 0px 0px 8px 0px rgba(200, 0, 0, 0.2);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output.royal_rental_message_box.royal_rental_message_box_error,
+.royal_rental_message_box_error {
+	border-color: #f04c49;
+	background-color: #feeeee;
+	color: #99302e;
+	-webkit-box-shadow: 4px 4px 16px 0px rgba(200, 0, 0, 0.3);
+	-ms-box-shadow: 4px 4px 16px 0px rgba(200, 0, 0, 0.3);
+	box-shadow: 4px 4px 16px 0px rgba(200, 0, 0, 0.3);
+}
+
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form .wpcf7-response-output {
+	border-color: #46b450;
+	background-color: #feeeee;
+	color: #46b450;
+}
+
+form.wpcf7-form {
+	position: relative;
+}
+
+form.wpcf7-form .wpcf7-spinner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}

@@ -1,0 +1,23 @@
+<svg id="wedding-rings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2e6f7;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #aa9e90;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>SVG-shapes-for-Fletch_fletch_modified</title>
+  <g>
+    <circle class="cls-1" cx="173.94" cy="29" r="18"/>
+    <circle class="cls-1" cx="195.94" cy="23" r="18"/>
+    <circle class="cls-2" cx="173.91" cy="28.98" r="18.98"/>
+    <circle class="cls-2" cx="195.96" cy="22.98" r="18.98"/>
+  </g>
+</svg>

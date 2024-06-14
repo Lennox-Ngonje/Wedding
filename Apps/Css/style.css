@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg1{
+    background: linear-gradient(0.25turn, rgb(214, 129, 253), #f57e00, rgb(196, 81, 250));
+}
+
+/* .bg1{
+    background: radial-gradient(circle at center, rgba(184, 51, 225, 0.459) 0, rgba(144, 89, 255, 0.562) 37.1%, rgba(91, 109, 248, 0.363) 61.4%, rgba(0, 142, 237, 0.432) 100%);
+} */
+
+.rectangle{
+  background-color: red;
+  width: 0.2vw;
+  height: 8vh;
+  position: relative;
+  right: 12px;
+}
+.rectangle2{
+  background-color: red;
+  width: 0.2vw;
+  height: 8vh;
+  position: relative;
+  left: 112px;
+}
+.rectangle3{
+  background-color: red;
+  width: 0.2vw;
+  height: 8vh;
+  position: relative;
+  left: 176px;
+}
+
+.text1{
+  color: white;
+}
+
+.text1:hover{
+  color: #b833e1;
+}
+
+.text2:hover{
+  color: red;
+}
+
+.hero{
+  background-color: url(../../Apps/Assest/nikki-gibson-4ExHGkN7fzQ-unsplash.jpg);
+}
+
+.img1 {
+  width: 470px;
+  border-radius: 40px;
+}
+
+@media (max-width: 656px) {
+
+  .rectangle {
+      background-color: red;
+      width: 0.2vw;
+      height: 8vh;
+      position: relative;
+      right: 22px;
+    }
+  
+    .rectangle2 {
+      background-color: red;
+      width: 0.5vw;
+      height: 8vh;
+      position: relative;
+      left: -0px;
+    }
+  
+    .rectangle3 {
+      background-color: red;
+      width: 0.2vw;
+      height: 8vh;
+      position: relative;
+      left: 58px;
+    }
+    .text2{
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+  .img1{
+    width: 370px;
+  }
+  
+  .img2{
+    width: 390px;
+  }
+}
+
+.underlined{
+  width: 15%;
+  height: 0.4vh;
+  color: #b833e1;
+  background-color: #b833e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
